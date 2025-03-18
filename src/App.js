@@ -1,7 +1,8 @@
 // src/App.js
 import React from 'react';
 import Header from './components/Header/Header';
-/* import HeroSection from './components/HeroSection/HeroSection';
+import HeroSection from './components/HeroSection/HeroSection';
+/* 
 import AboutUs from './components/AboutUs/AboutUs';
 import WhyChooseUs from './components/WhyChooseUs/WhyChooseUs';
 import Pricing from './components/Pricing/Pricing';
@@ -12,7 +13,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/* <HeroSection />
+      <HeroSection />
+      {/* 
       <AboutUs />
       <WhyChooseUs />
       <Pricing />
