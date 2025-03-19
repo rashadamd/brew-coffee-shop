@@ -26,16 +26,8 @@ const Header = () => {
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto">
-                <li className="nav-item dropdown">
-                  <a className="nav-link" href="#">
-                    Home
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li><a className="dropdown-item" href="/">Home - Main</a></li>
-                    <li><a className="dropdown-item" href="/index-video">Home - Video</a></li>
-                    <li><a className="dropdown-item" href="/index-slider">Home - Slider</a></li>
-                  </ul>
-                </li>
+                
+                <li className="nav-item"><a className="nav-link" href="/">Home</a></li>
                 <li className="nav-item"><a className="nav-link" href="/about">About Us</a></li>
                 <li className="nav-item"><a className="nav-link" href="/services">Services</a></li>
                 <li className="nav-item"><a className="nav-link" href="/menu">Menu</a></li>
@@ -58,8 +50,14 @@ const Header = () => {
                   </ul>
                 </li>
                 <li className="nav-item"><a className="nav-link" href="/contact">Contact Us</a></li>
+                
+              </ul>
+              <ul
+                class="nav justify-content-center  "
+              >
                 <li className="nav-item highlighted-menu"><a className="nav-link" href="/book-table">Book A Table</a></li>
               </ul>
+              
             </div>
           </div>
         </nav>
