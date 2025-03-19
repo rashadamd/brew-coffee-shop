@@ -1,0 +1,44 @@
+/* src/components/TextMarquee/TextMarquee.css */
+
+.text-marquee-container {
+  background-color: #EAD9C3;
+  color: #1E1E2A;
+  padding: 10px 0;
+  overflow: hidden; /* Crucial: Hide overflow for seamless effect */
+  font-family: 'Playfair Display', serif;
+  white-space: nowrap; /* Prevent text wrapping */
+  position: relative; /* Needed for absolute positioning of content if needed */
+}
+
+.text-marquee {
+  display: flex; /* Use flexbox to arrange text copies side-by-side */
+  flex-direction: row; /* Ensure horizontal arrangement */
+  width: auto; /* Let width be determined by content */
+  animation: seamlessTextMarquee 10s linear infinite; /* Adjust duration */
+}
+
+.text-marquee-content {
+  font-size: 2.2em;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  margin: 0;
+  flex-shrink: 0; /* Prevent text from shrinking */
+  width: auto; /* Width based on content */
+  padding-right: 20px; /* Optional spacing between text copies if needed */
+}
+
+@keyframes seamlessTextMarquee {
+  0% {
+    transform: translateX(0%); /* Start at original position */
+  }
+  100% {
+    transform: translateX(-100%); /* Move left by 100% of ONE text copy's width */
+  }
+}
+
+/* Optional: Responsiveness */
+@media (max-width: 768px) {
+  .text-marquee-content {
+    font-size: 1.8em;
+  }
+}
