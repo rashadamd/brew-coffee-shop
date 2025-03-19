@@ -1,4 +1,13 @@
 /* src/components/HeroSection/HeroSection.css */
+
+:root { 
+  --button-text-color: #CBA174;  
+  --button-border-color: #CBA174;
+  --button-hover-bg: linear-gradient(to left, #E0C8A2, #CBA174, #B38B6D);
+  --button-hover-bg-r: linear-gradient(to right, #E0C8A2, #CBA174, #B38B6D);
+  --button-hover-text: #FFFFFF;  
+}
+
 .hero-section {
     height: 100vh;
     position: relative;
@@ -15,6 +24,7 @@
     text-align: center;
     color: #fff;
     position: relative;
+    transition: all 1s ease-in-out;
   }
   
   .hero-slide::before {
@@ -32,7 +42,7 @@
     z-index: 1;
     max-width: 800px;
     padding: 0 20px;
-    animation: fadeInUp 1s ease-in-out;
+    animation: fadeInUp 2s ease-in-out;
   }
   
   .hero-subtitle {
@@ -64,19 +74,19 @@
   
   /* Custom Button Styles */
   .hero-buttons .btn-primary {
-    background-color: #ffcc00; /* Yellow background */
+    background: var(--button-hover-bg);
     color: #000; /* Black text */
     border: none;
     padding: 12px 24px;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
-    border-radius: 5px;
+    border-radius: 25px;
     transition: all 0.3s ease-in-out;
   }
   
   .hero-buttons .btn-primary:hover {
-    background-color: #e6b800; /* Darker yellow on hover */
+    background: var(--button-hover-bg-r); /* Darker yellow on hover */
   }
   
   .hero-buttons .btn-secondary {
@@ -85,15 +95,19 @@
     border: 2px solid #fff; /* White border */
     padding: 12px 24px;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
-    border-radius: 5px;
+    border-radius: 25px;
     transition: all 0.3s ease-in-out;
   }
   
   .hero-buttons .btn-secondary:hover {
-    background-color: #fff; /* White background on hover */
-    color: #000; /* Black text on hover */
+
+    background: var(--button-hover-bg);
+    color: #000000 ; /* White text */
+    transition: all 0.6s ease-in-out;
+    border: 1px solid var(--button-border-color);
+    
   }
   
   /* Swiper Pagination Styles */
@@ -106,7 +120,7 @@
   }
   
   .swiper-pagination-bullet-active {
-    background-color: #ffcc00;
+    background-color: #d18c0c;
     opacity: 1;
   }
   
