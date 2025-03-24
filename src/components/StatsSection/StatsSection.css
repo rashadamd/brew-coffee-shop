@@ -1,0 +1,71 @@
+/* src/components/StatsSection/StatsSection.css */
+
+.stats-section {
+    padding: 60px 0; /* Adjust padding as needed for section spacing */
+    background-color: transparent; /* Set to your desired background, or leave transparent */
+  }
+  
+  .stat-item {
+    text-align: center;
+    margin-bottom: 30px; /* Spacing between stat items vertically on smaller screens */
+  }
+  
+  .stat-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px; /* Adjust circle size */
+    height: 90px; /* Adjust circle size */
+    background-color: #2E363E; /* Dark circle background color from image approximation */
+    border-radius: 50%; /* Make it a circle */
+    margin: 0 auto 20px; /* Center circle and add margin below */
+  }
+  
+  .stat-icon-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Adjust icon size within the circle */
+    height: 40px; /* Adjust icon size within the circle */
+    color: #CBA174; /* Icon color (beige) - if using font icons */
+  }
+  
+  .stat-icon-img img {
+      max-width: 60%; /* Ensure image icons scale down within the icon container */
+      max-height: 60%;
+      display: block; /* To remove any default inline spacing */
+  }
+  
+  
+  .stat-number {
+    font-size: 2.8rem; /* Adjust number font size */
+    font-weight: bold; /* Bold number as in the image */
+    color: #CBA174; /* White number color */
+    margin-bottom: 5px; /* Spacing below number */
+    line-height: 1; /* Adjust line height if needed for vertical alignment */
+  }
+  
+  .stat-text {
+    font-size: 1rem; /* Adjust label font size */
+    color: #CBA174; /* Beige label color */
+    text-transform: uppercase; /* Uppercase labels as in image */
+    letter-spacing: 0.08em; /* Add letter spacing for uppercase text */
+  }
+  
+  /* Responsive adjustments (optional) */
+  @media (max-width: 768px) {
+    .stat-number {
+      font-size: 2.4rem; /* Slightly smaller number on smaller screens */
+    }
+    .stat-text {
+      font-size: 0.9rem; /* Slightly smaller label on smaller screens */
+    }
+    .stat-icon {
+      width: 70px; /* Smaller icon circle on smaller screens */
+      height: 70px;
+    }
+     .stat-icon-img {
+      width: 30px; /* Smaller icon size within smaller circle */
+      height: 30px;
+    }
+  }
