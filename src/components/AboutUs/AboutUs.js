@@ -1,12 +1,41 @@
 // src/components/AboutUs/AboutUs.js
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import './AboutUs.css';
 
 const AboutUs = () => {
+  const aboutUsRef = useRef(null); // Create a ref for the AboutUs section
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            aboutUsRef.current.classList.add('is-visible');
+          } else {
+            aboutUsRef.current.classList.remove('is-visible');
+          }
+        });
+      },
+      {
+        threshold: 0.1 // Adjusted threshold to 0.1 (10% visible) for earlier animation trigger
+      }
+    );
+
+    if (aboutUsRef.current) {
+      observer.observe(aboutUsRef.current);
+    }
+
+    return () => {
+      if (aboutUsRef.current) {
+        observer.unobserve(aboutUsRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <section className="about-us">
+    <section className="about-us" ref={aboutUsRef}>
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6">
@@ -36,7 +65,7 @@ const AboutUs = () => {
               <div className="about-actions">
                 <a href="/about" className="btn btn-primary">More About Us</a>
                 <div className="video-play-button">
-                  <a href="https://www.youtube.com/watch?v=Y-x0efG1seA" className="popup-video">
+                  <a href="https://www.youtube.com/" className="popup-video">
                     <FontAwesomeIcon icon={faPlay} />
                   </a>
                   <p>Watch Video</p>
