@@ -1,71 +1,133 @@
 /* src/components/StatsSection/StatsSection.css */
 
 .stats-section {
-    padding: 60px 0; /* Adjust padding as needed for section spacing */
-    background-color: transparent; /* Set to your desired background, or leave transparent */
+  padding: 50px 0; /* Adjust padding as needed for section spacing */
+  /* Darker Background Gradient for Stats Section */
+  background: linear-gradient(to bottom, #1E3A51, #182F42, #132735); /* Darker shades related to #132735, vertical gradient */
+  overflow: hidden; /* To contain animations if any */
+}
+
+
+.row {
+    /* Adjust row styles if needed, based on your layout system */
+    display: flex; /* Assuming flexbox row for justify-content-center to work */
+    flex-wrap: wrap;
+    justify-content: center; /* Center items in the row */
+}
+
+.stat-item {
+  text-align: center;
+  margin-bottom: 10px; /* Spacing between stat items vertically on larger screens */
+  margin-right: 10px;
+  padding: 15px; /* Add padding to stat items */
+  border-radius: 15px; /* Rounded corners for stat items */
+  background-color: rgba(255, 255, 255, 0.05); /* Semi-transparent white background */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-sizing: border-box; /* Ensure padding is included in element's total width/height */
+}
+
+.stat-item:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Lighter background on hover */
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.stat-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px; /* Increased circle size */
+  height: 100px; /* Increased circle size */
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white circle background */
+  border-radius: 50%; /* Make it a circle */
+  margin: 0 auto 25px; /* Center circle and add margin below */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Shadow to icon circle */
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transition for hover effects on circle*/
+}
+
+.stat-icon:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Brighter circle background on hover */
+  transform: scale(1.05); /* Scale up slightly on icon hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Enhanced icon shadow on hover */
+}
+
+.stat-icon-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* Adjust icon size within the circle */
+  height: 50px; /* Adjust icon size within the circle */
+  color: var(--logo-beige); /* Icon color (beige) - if using font icons */
+}
+
+.stat-icon-img img {
+    max-width: 70%; /* Increased max icon image size within the circle */
+    max-height: 70%;
+    display: block; /* To remove any default inline spacing */
+}
+
+
+.stat-number {
+  font-size: 3rem; /* Adjust number font size - increased slightly */
+  font-weight: 900 !important; /* Super bold number as in the image */
+  color: #fff; /* White number color - changed to white for dark bg */
+  margin-bottom: 8px; /* Spacing below number */
+  line-height: 1; /* Adjust line height if needed for vertical alignment */
+  letter-spacing: 0.02em; /* Subtle letter spacing for numbers */
+}
+
+.stat-text {
+  font-size: 1.1rem; /* Adjust label font size - increased slightly */
+  color: var(--logo-beige); /* Beige label color - kept beige accent color */
+  text-transform: uppercase; /* Uppercase labels as in image */
+  letter-spacing: 0.1em; /* Add letter spacing for uppercase text */
+  font-weight: 700 !important; /* Make stat text slightly bold */
+}
+
+/* Responsive adjustments (optional) */
+@media (max-width: 768px) {
+  .stats-section {
+      padding: 40px 0; /* Adjust section padding for smaller screens */
   }
-  
+
+  .row {
+      /* Ensure row items are centered horizontally on smaller screens */
+      justify-content: space-around; /* Changed from center to space-around */
+  }
+
+  .col-md-3.col-sm-6 { /* Targeting both col-md-3 and col-sm-6 classes together */
+    width: calc(50% - 30px); /* Explicitly set width for two columns side by side minus gap - increased gap*/
+    max-width: calc(50% - 30px);
+    margin-bottom: 30px; /* Increased vertical margin for more space between rows */
+    margin-right: 30px; /* Increased horizontal gap between boxes in the row */
+    display: inline-block; /* changed from flex column to inline block - important for spacing to work*/
+  }
+
+  /* For the last item in a row of two, remove right margin */
+  .col-md-3.col-sm-6:nth-child(even) { /* Corrected selector to target combined classes */
+    margin-right: 0;
+  }
+
   .stat-item {
-    text-align: center;
-    margin-bottom: 30px; /* Spacing between stat items vertically on smaller screens */
+    padding: 15px; /* Adjust stat item padding for smaller screens - no change*/
+    margin-bottom: 0; /* Remove vertical margin as spacing handled by col-sm-6 margins now - no change*/
+    display: block; /* Ensure stat-item is block to fill col-sm-6 width*/
   }
-  
-  .stat-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90px; /* Adjust circle size */
-    height: 90px; /* Adjust circle size */
-    background-color: #2E363E; /* Dark circle background color from image approximation */
-    border-radius: 50%; /* Make it a circle */
-    margin: 0 auto 20px; /* Center circle and add margin below */
-  }
-  
-  .stat-icon-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px; /* Adjust icon size within the circle */
-    height: 40px; /* Adjust icon size within the circle */
-    color: #CBA174; /* Icon color (beige) - if using font icons */
-  }
-  
-  .stat-icon-img img {
-      max-width: 60%; /* Ensure image icons scale down within the icon container */
-      max-height: 60%;
-      display: block; /* To remove any default inline spacing */
-  }
-  
-  
+
   .stat-number {
-    font-size: 2.8rem; /* Adjust number font size */
-    font-weight: bold; /* Bold number as in the image */
-    color: #CBA174; /* White number color */
-    margin-bottom: 5px; /* Spacing below number */
-    line-height: 1; /* Adjust line height if needed for vertical alignment */
+    font-size: 2.4rem; /* Further smaller number on even smaller screens - no change*/
   }
-  
   .stat-text {
-    font-size: 1rem; /* Adjust label font size */
-    color: #CBA174; /* Beige label color */
-    text-transform: uppercase; /* Uppercase labels as in image */
-    letter-spacing: 0.08em; /* Add letter spacing for uppercase text */
+    font-size: 0.9rem; /*  Smaller label size for small screens - no change*/
   }
-  
-  /* Responsive adjustments (optional) */
-  @media (max-width: 768px) {
-    .stat-number {
-      font-size: 2.4rem; /* Slightly smaller number on smaller screens */
-    }
-    .stat-text {
-      font-size: 0.9rem; /* Slightly smaller label on smaller screens */
-    }
-    .stat-icon {
-      width: 70px; /* Smaller icon circle on smaller screens */
-      height: 70px;
-    }
-     .stat-icon-img {
-      width: 30px; /* Smaller icon size within smaller circle */
-      height: 30px;
-    }
+  .stat-icon {
+    width: 70px; /* Smaller icon circle on smaller screens - no change*/
+    height: 70px;
+    margin-bottom: 10px; /* Further reduced icon margin on smaller screens - no change*/
   }
+   .stat-icon-img {
+    width: 30px; /* Icon size within smaller circle - no change*/
+    height: 30px;
+  }
+}
