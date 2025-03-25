@@ -7,9 +7,7 @@ import TextMarquee from './components/TextMarquee/TextMarquee';
 import WhyChooseUs from './components/WhyChooseUs/WhyChooseUs';
 import StatsSection from './components/StatsSection/StatsSection';
 import Pricing from './components/Pricing/Pricing';
-
-/* 
-import Footer from './components/Footer/Footer'; */
+import Footer from './components/Footer/Footer';
 import './App.css';
 
 function App() {
@@ -22,10 +20,7 @@ function App() {
       <WhyChooseUs />
       <StatsSection />
       <Pricing />
-
-      {/* 
-      
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
