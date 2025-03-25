@@ -38,8 +38,8 @@ const WhyChooseUs = () => {
   ];
 
   const [contentRef, contentInView] = useInView({
-    triggerOnce: true, // Trigger animation only once
-    threshold: 0.2, // Trigger when 20% of the element is visible
+    triggerOnce: true,
+    threshold: 0.2,
   });
 
   const [reasonsRef, reasonsInView] = useInView({
@@ -48,12 +48,12 @@ const WhyChooseUs = () => {
   });
 
   return (
-    <section className="why-choose-us">
+    <section className="why-choose-us is-visible" >
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
             <div
-              className={`why-choose-content ${contentInView ? 'fade-in' : ''}`}
+              className={`why-choose-content ${contentInView ? 'is-visible' : ''}`}
               ref={contentRef}
             >
               <h3 className="section-subtitle">Why Choose Us</h3>
@@ -67,7 +67,7 @@ const WhyChooseUs = () => {
                 <div
                   className={`why-choose-item ${reasonsInView ? 'fade-in' : ''}`}
                   key={index}
-                  style={{ transitionDelay: `${index * 0.2}s` }} // Staggered animation
+                  style={{ transitionDelay: `${index * 0.2}s` }}
                 >
                   <div className="icon-box">
                     <img src={reason.icon} alt={reason.title} />
