@@ -1,16 +1,15 @@
-// src/components/StatsSection/StatsSection.js
 import React, { useState, useEffect } from 'react';
 import './StatsSection.css';
 
 const StatsSection = () => {
-  // State for each statistic number to control the animation
+
   const [dailyVisitorsCount, setDailyVisitorsCount] = useState(0);
   const [recipeCreatedCount, setRecipeCreatedCount] = useState(0);
   const [eventsHostedCount, setEventsHostedCount] = useState(0);
   const [happyCustomerCount, setHappyCustomerCount] = useState(0);
 
   useEffect(() => {
-    // Animation duration and increment step (adjust as needed)
+
     const duration = 2000; // milliseconds for the whole animation
     const incrementVisitors = 300 / (duration / 10); // Increment approx. every 10ms
     const incrementRecipes = 50 / (duration / 10);
@@ -24,11 +23,11 @@ const StatsSection = () => {
         const nextCount = prevCount + incrementVisitors;
         if (nextCount >= 300) {
           clearInterval(visitorsInterval);
-          return 300; // Ensure it stops exactly at 300
+          return 300; 
         }
         return nextCount;
       });
-    }, 10); // Interval in milliseconds for Visitors
+    }, 10); 
 
     recipesInterval = setInterval(() => {
       setRecipeCreatedCount((prevCount) => {
@@ -39,7 +38,7 @@ const StatsSection = () => {
         }
         return nextCount;
       });
-    }, 10); // Interval in milliseconds for Recipes
+    }, 10); 
 
     eventsInterval = setInterval(() => {
       setEventsHostedCount((prevCount) => {
@@ -50,7 +49,7 @@ const StatsSection = () => {
         }
         return nextCount;
       });
-    }, 10); // Interval in milliseconds for Events
+    }, 10); 
 
     customersInterval = setInterval(() => {
       setHappyCustomerCount((prevCount) => {
@@ -61,9 +60,8 @@ const StatsSection = () => {
         }
         return nextCount;
       });
-    }, 10); // Interval in milliseconds for Customers
+    }, 10); 
 
-    // Cleanup intervals when component unmounts or effect re-runs
     return () => {
       clearInterval(visitorsInterval);
       clearInterval(recipesInterval);
@@ -72,7 +70,7 @@ const StatsSection = () => {
     };
   }, []); // Empty dependency array ensures effect runs only once on mount
 
-
+// #CBA174
   return (
     <section className="stats-section">
       <div className="container">
@@ -80,7 +78,6 @@ const StatsSection = () => {
           <div className="col-md-3 col-sm-6 stat-item">
             <div className="stat-icon">
               <i className="stat-icon-img">
-                 {/* Replace with your actual icon component or SVG */}
                  <img src="/images/icon-daily-visitors.svg" alt="Daily Visitors" />
               </i>
             </div>
@@ -91,7 +88,6 @@ const StatsSection = () => {
           <div className="col-md-3 col-sm-6 stat-item">
             <div className="stat-icon">
               <i className="stat-icon-img">
-                 {/* Replace with your actual icon component or SVG */}
                  <img src="/images/icon-recipe-created.svg" alt="Recipe Created" />
               </i>
             </div>
@@ -102,7 +98,6 @@ const StatsSection = () => {
           <div className="col-md-3 col-sm-6 stat-item">
             <div className="stat-icon">
               <i className="stat-icon-img">
-                 {/* Replace with your actual icon component or SVG */}
                  <img src="/images/icon-events-hosted.svg" alt="Events Hosted" />
               </i>
             </div>
@@ -113,7 +108,6 @@ const StatsSection = () => {
           <div className="col-md-3 col-sm-6 stat-item">
             <div className="stat-icon">
               <i className="stat-icon-img">
-                 {/* Replace with your actual icon component or SVG */}
                  <img src="/images/icon-happy-customer.svg" alt="Happy Customer" />
               </i>
             </div>

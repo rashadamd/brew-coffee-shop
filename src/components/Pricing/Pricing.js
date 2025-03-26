@@ -1,39 +1,37 @@
-// src/components/Pricing/Pricing.js
 import React, { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import './Pricing.css';
 
 const Pricing = () => {
-  const [activeTab, setActiveTab] = useState('all'); // State to track active tab
+  const [activeTab, setActiveTab] = useState('all'); 
 
-  // Use react-intersection-observer to detect when the section is in view
   const [sectionRef, sectionInView] = useInView({
-    triggerOnce: true, // Trigger animation only once
-    threshold: 0.2, // Trigger when 20% of the element is visible
+    triggerOnce: true, 
+    threshold: 0.2, 
   });
 
   const menuItems = {
     all: [
       {
-        image: '/images/pricing-menu-1.png',
+        image: '/images/pricing-menu-1.jpeg',
         title: 'Chips & Dip',
         price: '$16.00',
         description: 'A perfect pairing of crispy, freshly made chips and rich, flavorful dips.',
       },
       {
-        image: '/images/pricing-menu-2.png',
+        image: '/images/pricing-menu-2.jpeg',
         title: 'Tender Octopus',
         price: '$18.00',
         description: 'Grilled to perfection, served with a tangy citrus glaze.',
       },
       {
-        image: '/images/pricing-menu-3.png',
+        image: '/images/pricing-menu-3.jpeg',
         title: 'Grilled Veal Filet',
         price: '$22.00',
         description: 'Juicy and tender, served with a side of roasted vegetables.',
       },
       {
-        image: '/images/pricing-menu-4.png',
+        image: '/images/pricing-menu-4.jpeg',
         title: 'Mexican Soup',
         price: '$12.00',
         description: 'A spicy and hearty soup with a blend of traditional Mexican flavors.',
@@ -41,7 +39,7 @@ const Pricing = () => {
     ],
     seafood: [
       {
-        image: '/images/pricing-menu-2.png',
+        image: '/images/pricing-menu-2.jpeg',
         title: 'Tender Octopus',
         price: '$18.00',
         description: 'Grilled to perfection, served with a tangy citrus glaze.',
@@ -49,7 +47,7 @@ const Pricing = () => {
     ],
     desserts: [
       {
-        image: '/images/pricing-menu-1.png',
+        image: '/images/pricing-menu-1.jpeg',
         title: 'Chocolate Lava Cake',
         price: '$10.00',
         description: 'Warm, gooey chocolate cake with a molten center.',
@@ -57,7 +55,7 @@ const Pricing = () => {
     ],
     drinks: [
       {
-        image: '/images/pricing-menu-4.png',
+        image: '/images/pricing-menu-4.jpeg',
         title: 'Classic Mojito',
         price: '$8.00',
         description: 'A refreshing mix of mint, lime, and rum.',

@@ -1,4 +1,3 @@
-/* src/components/Pricing/Pricing.css */
 .pricing {
   padding: 80px 0;
   background-color: #fff;
@@ -25,7 +24,7 @@
 .section-title h3 {
   font-size: 3.5rem;
   font-weight: 700;
-  color: #CBA174; /* Subtitle color */
+  color: #CBA174;
   margin-bottom: 10px;
   text-transform: uppercase;
   font-family: 'Caveat Brush', cursive;
@@ -36,7 +35,7 @@
 .section-title h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #333; /* Title color */
+  color: #333;
 }
 
 .pricing-tabs {
@@ -48,7 +47,7 @@
 
 .tab {
   background-color: transparent;
-  border: 2px solid #CBA174; /* Border color */
+  border: 2px solid #CBA174;
   color: #333;
   padding: 10px 20px;
   font-size: 1rem;
@@ -60,15 +59,15 @@
 }
 
 .tab.active {
-  background: linear-gradient(to right, #E0C8A2, #CBA174, #B38B6D); /* Gradient for active tab */
-  color: #fff; /* Text color for active tab */
-  border: 2px solid transparent; /* Remove border for active tab */
+  background: linear-gradient(to right, #E0C8A2, #CBA174, #B38B6D);
+  color: #fff;
+  border: 2px solid transparent;
 }
 
 .tab:hover {
-  background: linear-gradient(to right, #E0C8A2, #CBA174, #B38B6D); /* Gradient on hover */
-  color: #fff; /* Text color on hover */
-  border: 2px solid transparent; /* Remove border on hover */
+  background: linear-gradient(to right, #E0C8A2, #CBA174, #B38B6D);
+  color: #fff;
+  border: 2px solid transparent;
 }
 
 .pricing-menu {
@@ -78,7 +77,7 @@
 }
 
 .menu-item {
-  background-color: #f8f8f8; /* Light background for menu items */
+  background-color: #f8f8f8;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -108,23 +107,22 @@
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #333; /* Title color */
+  color: #333;
 }
 
 .menu-content p {
   font-size: 1rem;
-  color: #666; /* Description color */
+  color: #666;
   margin-bottom: 10px;
 }
 
 .menu-content .price {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #CBA174; /* Price color */
+  color: #CBA174;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .pricing-tabs {
     flex-direction: column;
     align-items: center;
@@ -141,106 +139,105 @@
 }/* src/components/Pricing/Pricing.css */
 .pricing {
   padding: 80px 0;
-  /* Darker Background Gradient for Pricing Section */
-  background: linear-gradient(to bottom, #1E3A51, #182F42, #132735); /* Darker shades related to #132735, vertical gradient */
+  background: linear-gradient(to bottom, #1E3A51, #182F42, #132735);
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 1s ease-out, transform 1s ease-out; /* Increased transition duration to 1s */
-  font-family: 'Poppins', sans-serif; /* Consistent font family */
-  color: #fff; /* Default text color to white for darker background */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
 }
 
-.pricing.is-visible { /* Use is-visible for consistency with other sections */
+.pricing.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
 
 .section-title {
   text-align: center;
-  margin-bottom: 60px; /* Increased margin below title for better spacing */
+  margin-bottom: 60px;
 }
 
 .section-title h3 {
-  font-size: 3rem; /* Slightly reduced subtitle size for better fit */
-  font-weight: 900 !important; /* Super bold subtitle */
-  color: var(--logo-beige); /* Using logo beige for subtitle */
-  margin-bottom: 15px; /* Slightly increased margin */
+  font-size: 3rem;
+  font-weight: 900 !important;
+  color: var(--logo-beige);
+  margin-bottom: 15px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-family: 'Poppins', sans-serif; /* Using Poppins for subtitle for better consistency - can revert to Caveat Brush if desired */
-  text-transform: uppercase; /* Keep uppercase if using Poppins */
-  font-weight: 900 !important; /* Super bold Poppins subtitle */
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight: 900 !important;
 }
 
 .section-title h2 {
-  font-size: 3rem; /* Increased title size */
-  font-weight: 900 !important; /* Super bold title */
-  color: #fff; /* White title color for darker background */
-  line-height: 1.3; /* Improved line height for larger title */
+  font-size: 3rem;
+  font-weight: 900 !important;
+  color: #fff;
+  line-height: 1.3;
 }
 
 .pricing-tabs {
   display: flex;
   justify-content: center;
-  gap: 15px; /* Reduced gap between tabs */
-  margin-bottom: 50px; /* Increased margin below tabs */
+  gap: 15px;
+  margin-bottom: 50px;
 }
 
 .tab {
-  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white tab background */
-  border: none; /* Removed border */
-  color: #fff; /* White text color for tabs */
-  padding: 12px 25px; /* Adjusted padding for button appearance */
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  padding: 12px 25px;
   font-size: 1rem;
-  font-weight: 700 !important; /* Bold tab text */
+  font-weight: 700 !important;
   text-transform: uppercase;
-  border-radius: 8px; /* Adjusted border radius */
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Added subtle shadow */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .tab.active {
-  background-color: var(--logo-beige); /* Beige for active tab background */
-  color: var(--header-bg); /* Dark text for active tab */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow for active tab */
+  background-color: var(--logo-beige);
+  color: var(--header-bg);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .tab:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* Slightly brighter hover background */
+  background-color: rgba(255, 255, 255, 0.2);
   color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* Slightly increased shadow on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 .pricing-menu {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Adjusted minmax for menu item width */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
 }
 
 .menu-item {
-  background-color: rgba(255, 255, 255, 0.05); /* Translucent white background for menu items */
-  padding: 25px; /* Increased padding for menu items */
-  border-radius: 12px; /* More rounded corners */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for menu items */
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
-  gap: 25px; /* Increased gap in menu items */
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Transition for bg color */
-  border: 2px solid transparent; /* Add transparent border initially */
+  gap: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  border: 2px solid transparent;
 }
 
 .menu-item:hover {
-  transform: translateY(-8px); /* More pronounced hover lift */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
-  background-color: rgba(255, 255, 255, 0.1); /* Slightly lighter background on menu item hover */
-  border-color: var(--logo-beige); /* Beige border on menu item hover */
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: var(--logo-beige);
 }
 
 .menu-image img {
-  width: 120px; /* Increased image width */
-  height: 120px; /* Increased image height */
-  border-radius: 12px; /* Match menu item border radius */
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
   object-fit: cover;
 }
 
@@ -249,84 +246,83 @@
 }
 
 .menu-content h3 {
-  font-size: 1.6rem; /* Increased menu item title size */
-  font-weight: 900 !important; /* Super bold menu item title */
-  margin-bottom: 12px; /* Slightly increased margin */
-  color: #fff; /* White title color for menu items */
-  letter-spacing: 0.03em; /* Added slight letter spacing for title */
+  font-size: 1.6rem;
+  font-weight: 900 !important;
+  margin-bottom: 12px;
+  color: #fff;
+  letter-spacing: 0.03em;
 }
 
 .menu-content p {
-  font-size: 1.05rem; /* Slightly larger description font */
-  color: #ddd; /* Lighter description color */
-  margin-bottom: 15px; /* Increased margin below description */
-  line-height: 1.7; /* Improved line height for readability */
+  font-size: 1.05rem;
+  color: #ddd;
+  margin-bottom: 15px;
+  line-height: 1.7;
 }
 
 .menu-content .price {
-  font-size: 1.3rem; /* Increased price size */
-  font-weight: 900 !important; /* Super bold price */
-  color: var(--logo-beige); /* Beige price color */
+  font-size: 1.3rem;
+  font-weight: 900 !important;
+  color: var(--logo-beige);
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .pricing {
-    padding: 60px 0; /* Adjust padding for smaller screens */
+    padding: 60px 0;
   }
 
   .section-title {
-    margin-bottom: 50px; /* Adjust title margin on smaller screens */
+    margin-bottom: 50px;
   }
 
   .section-title h3 {
-    font-size: 2.5rem; /* Smaller subtitle for smaller screens */
+    font-size: 2.5rem;
   }
 
   .section-title h2 {
-    font-size: 2rem; /* Smaller title for smaller screens */
+    font-size: 2rem;
   }
 
   .pricing-tabs {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px; /* Adjust tab margin on smaller screens */
+    margin-bottom: 30px;
   }
 
   .tab {
-    width: 90%; /* Make tabs full width on small screens */
-    max-width: 350px; /* Limit max width of tabs */
-    margin-bottom: 10px; /* Spacing between tabs stacked vertically */
-    text-align: center; /* Center text in stacked tabs */
+    width: 90%;
+    max-width: 350px;
+    margin-bottom: 10px;
+    text-align: center;
   }
 
   .pricing-menu {
-    grid-template-columns: 1fr; /* Single column menu on smaller screens */
-    gap: 20px; /* Reduced gap in menu items on smaller screens */
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .menu-item {
-    padding: 20px; /* Adjust padding for menu items on smaller screens */
-    flex-direction: column; /* Stack image and content vertically */
-    text-align: center; /* Center text in stacked menu items */
-    align-items: center; /* Center items vertically in menu item */
-    gap: 15px; /* Reduced gap for stacked items */
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
   }
 
   .menu-image img {
-    width: 100px; /* Adjust image width for smaller screens */
-    height: 100px; /* Adjust image height for smaller screens */
+    width: 100px;
+    height: 100px;
   }
 
   .menu-content h3 {
-    font-size: 1.4rem; /* Smaller menu item title on smaller screens */
+    font-size: 1.4rem;
   }
 
   .menu-content p {
-    font-size: 0.95rem; /* Smaller menu item description font */
+    font-size: 0.95rem;
   }
 
   .menu-content .price {
-    font-size: 1.1rem; /* Smaller price font on smaller screens */
+    font-size: 1.1rem;
   }
 }
