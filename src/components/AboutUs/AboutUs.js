@@ -1,11 +1,10 @@
-// src/components/AboutUs/AboutUs.js
 import React, { useRef, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import './AboutUs.css';
 
 const AboutUs = () => {
-  const aboutUsRef = useRef(null); // Create a ref for the AboutUs section
+  const aboutUsRef = useRef(null); 
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -19,7 +18,7 @@ const AboutUs = () => {
         });
       },
       {
-        threshold: 0.1 // Adjusted threshold to 0.1 (10% visible) for earlier animation trigger
+        threshold: 0.1 
       }
     );
 

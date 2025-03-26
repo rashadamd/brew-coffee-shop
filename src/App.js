@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Header />
       <HeroSection />
-      <TextMarquee text="THIS IS A TEST MARQUEE *  SCROLLING TEXT EXAMPLE *  ENJOY! " />
+      <TextMarquee text="Coffee's Calling Your Name | But First, Coffee. Always | Life Happens, Coffee Helps | Get Your Brew On! | Warning: May Cause Happiness" />
       <AboutUs />
       <WhyChooseUs />
       <StatsSection />
