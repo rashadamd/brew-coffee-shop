@@ -9,7 +9,6 @@ const Header = () => {
   const dropdownRef = useRef(null);
   const navRef = useRef(null);
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     function handleClickOutside(event) {
       if (
@@ -72,15 +71,15 @@ const Header = () => {
                   <ul className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}>
                     <li><a className="dropdown-item" href="/service-single">Service Details</a></li>
                     <li><a className="dropdown-item" href="/blog">Blog</a></li>
-                    <li><a className="dropdown-item" href="/blog-single">Blog Details</a></li>
                     <li><a className="dropdown-item" href="/projects">Projects</a></li>
-                    <li><a className="dropdown-item" href="/project-single">Project Details</a></li>
                     <li><a className="dropdown-item" href="/team">Team</a></li>
-                    <li><a className="dropdown-item" href="/team-single">Team Details</a></li>
+                    {/* <li><a className="dropdown-item" href="/blog-single">Blog Details</a></li> */}
+                    {/* <li><a className="dropdown-item" href="/project-single">Project Details</a></li> */}
+                    {/* <li><a className="dropdown-item" href="/team-single">Team Details</a></li>
                     <li><a className="dropdown-item" href="/image-gallery">Image Gallery</a></li>
                     <li><a className="dropdown-item" href="/video-gallery">Video Gallery</a></li>
                     <li><a className="dropdown-item" href="/faqs">FAQs</a></li>
-                    <li><a className="dropdown-item" href="/404">404</a></li>
+                    <li><a className="dropdown-item" href="/404">404</a></li> */}
                   </ul>
                 </li>
 

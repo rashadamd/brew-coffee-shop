@@ -1,12 +1,11 @@
-// src/components/Footer/Footer.js
-import React, { useRef, useEffect } from 'react'; // Import useRef and useEffect
+import React, { useRef, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebookF, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faPhone, faMapMarkerAlt, faClock } from '@fortawesome/free-solid-svg-icons'; // Import Solid Icons
+import { faPhone, faMapMarkerAlt, faClock } from '@fortawesome/free-solid-svg-icons'; 
 import './Footer.css';
 
 const Footer = () => {
-  const footerRef = useRef(null); // Create a ref for the Footer section
+  const footerRef = useRef(null); 
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -15,12 +14,12 @@ const Footer = () => {
           if (entry.isIntersecting) {
             footerRef.current.classList.add('is-visible');
           } else {
-            footerRef.current.classList.remove('is-visible'); // Optional: remove class when out of viewport for re-animation each time
+            footerRef.current.classList.remove('is-visible'); 
           }
         });
       },
       {
-        threshold: 0.1 // Adjust threshold if needed (e.g., 0.1 for animation to start when just a bit of footer is visible)
+        threshold: 0.1 
       }
     );
 
@@ -36,11 +35,10 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="footer" ref={footerRef}>  {/* Attach the ref to the footer element */}
+    <footer className="footer" ref={footerRef}>  
       <div className="container">
         <div className="footer-content">
 
-          {/* New Contact Info Section */}
           <section className="contact-info-section">
             <div className="contact-info-box">
               <FontAwesomeIcon icon={faPhone} />
@@ -66,11 +64,10 @@ const Footer = () => {
               <a href="/reserve" className="btn-contact-info">Reserve A Table</a>
             </div>
           </section>
-          {/* End of Contact Info Section */}
 
 
           <div className="footer-logo">
-            <img src="/images/logo.svg" alt="Roast Coffee Logo" />
+            <img src="/images/logo.svg" alt="Brew Coffee" />
             <p>Bringing people together through the love of coffee.</p>
           </div>
 
@@ -88,9 +85,9 @@ const Footer = () => {
             <div className="footer-column">
               <h3>Contact</h3>
               <ul>
-                <li><i className="fas fa-map-marker-alt"></i> 123 Coffee St, Bean City</li>
-                <li><i className="fas fa-phone"></i> +1 (555) 123-4567</li>
-                <li><i className="fas fa-envelope"></i> hello@roastcoffee.com</li>
+                <li><i className="fas fa-map-marker-alt"></i>No: 999, Brew Street Coffee</li>
+                <li><i className="fas fa-phone"></i> +94 78 000 0000</li>
+                <li><i className="fas fa-envelope"></i>brew@coffee.com</li>
               </ul>
             </div>
 
@@ -117,7 +114,7 @@ const Footer = () => {
               <FontAwesomeIcon icon={faTwitter} />
             </a>
           </div>
-          <p className="copyright">© {new Date().getFullYear()} Roast Coffee. All rights reserved.</p>
+          <p className="copyright">© {new Date().getFullYear()} Brew Coffee. All rights reserved.</p>
         </div>
       </div>
     </footer>

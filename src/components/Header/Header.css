@@ -1,21 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
-  --header-bg: #132735;          
-  --logo-beige: #CBA174;         
-  --logo-white: #FFFFFF;         
-  --nav-text-color: #FFFFFF;     
-  --nav-hover-color: #CBA174;    
-  --button-text-color: #CBA174;  
+  --header-bg: #132735;
+  --logo-beige: #CBA174;
+  --logo-white: #FFFFFF;
+  --nav-text-color: #FFFFFF;
+  --nav-hover-color: #CBA174;
+  --button-text-color: #CBA174;
   --button-border-color: #CBA174;
   --button-hover-bg: linear-gradient(to left, #E0C8A2, #CBA174, #B38B6D);
-  --button-hover-text: #FFFFFF;  
-  --dropdown-text: #222222;      
+  --button-hover-text: #FFFFFF;
+  --dropdown-text: #222222;
   --dropdown-hover-text-color: #FFFFFF;
   --brown-hamburger: #A0774D;
 }
 
-/* ------------- HEADER STYLES ------------- */
 .main-header {
   background-color: var(--header-bg);
   padding: 20px 0;
@@ -28,20 +27,17 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* Navbar Scrolled Effect */
 .main-header.scrolled {
   background-color: rgba(19, 39, 53, 0.95);
   padding: 15px 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Logo */
 .navbar-brand img {
   height: 50px;
   transition: all 0.3s ease-in-out;
 }
 
-/* Navbar Centering */
 .navbar-nav {
   display: flex;
   justify-content: center;
@@ -60,12 +56,10 @@
   color: var(--nav-hover-color);
 }
 
-/* ---------------- DROPDOWN MENU ---------------- */
 .nav-item.dropdown {
   position: relative;
 }
 
-/* Dropdown Base */
 .dropdown-menu {
   background: linear-gradient(to bottom, #E0C8A2, #CBA174, #B38B6D);
   border: none;
@@ -83,14 +77,12 @@
   z-index: 999;
 }
 
-/* Show dropdown when active */
 .dropdown-menu.show {
   display: block;
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Dropdown Item Styling */
 .dropdown-item {
   color: var(--dropdown-text) !important;
   padding: 12px 20px;
@@ -105,7 +97,6 @@
   transform: translateX(10px);
 }
 
-/* ---------------- BOOK A TABLE BUTTON ---------------- */
 .book-table-btn {
   margin-left: auto;
 }
@@ -117,28 +108,27 @@
   border-radius: 25px;
   transition: all 0.3s ease-in-out;
   border: 1px solid var(--button-border-color);
-  font-weight: 700;
+  font-weight: 700 !important;
   width: 180px;
   align-items: end;
 }
 
 .highlighted-menu .nav-link:hover {
-  background: var(--button-hover-bg);
-  color: var(--button-hover-text) !important;
+  background-color: var(--logo-beige);
+  color: var(--header-bg) !important;
   transition: all 0.6s ease-in-out;
   border-color: transparent;
 }
 
 @media (max-width: 992px) {
   .main-header {
-    padding: 15px 0; /* Reduce header padding on mobile */
+    padding: 15px 0;
   }
 
   .navbar-brand img {
-    height: 40px; /* Reduce logo size on mobile */
+    height: 40px;
   }
 
-  /* Mobile Navbar */
   .navbar-collapse {
     position: absolute;
     top: 100%;
@@ -150,13 +140,13 @@
     display: none;
     transition: all 0.3s ease-in-out;
     text-align: center;
-    overflow: hidden; /* Prevent content overflow during transition */
+    overflow: hidden;
   }
 
   .navbar-collapse.show {
     display: block;
-    max-height: 100vh; /* or a specific height */
-    overflow-y: auto; /* Enable scroll if content is too long */
+    max-height: 100vh;
+    overflow-y: auto;
   }
 
 
@@ -174,33 +164,31 @@
     display: block;
     width: 100%;
     text-align: center;
-    font-size: 0.95em; /* Slightly reduce font size on mobile */
+    font-size: 0.95em;
   }
 
-  /* Mobile Dropdown */
   .nav-item.dropdown {
-    position: static; /* Crucial for mobile dropdown */
+    position: static;
   }
 
   .dropdown-menu {
-    position: static; /* Crucial for mobile dropdown */
-    display: none; /* Initially hidden, toggled by JS */
-    opacity: 1; /* Ensure it's visible when shown */
-    transform: translateY(0); /* No transform in mobile */
+    position: static;
+    display: none;
+    opacity: 1;
+    transform: translateY(0);
     box-shadow: none;
     padding: 0;
     width: 100%;
     border-radius: 0;
     background: transparent !important;
-    overflow: hidden; /* Prevent dropdown content overflow */
+    overflow: hidden;
   }
 
   .dropdown-menu.show {
-    display: block; /* Show dropdown on mobile */
-    max-height: 0; /* Start with 0 height for animation */
-    transition: max-height 0.4s ease-out; /* Animate height */
-    max-height: 500px; /* Adjust max height as needed, or use 'initial' to auto-adjust */
-    /* overflow-y: auto;  If needed, enable scroll for very long dropdowns */
+    display: block;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
+    max-height: 500px;
   }
 
 
@@ -212,7 +200,7 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 0.9em;
     font-weight: 500 !important;
-    transition: background-color 0.3s ease; /* Smooth background transition */
+    transition: background-color 0.3s ease;
   }
 
   .dropdown-item:last-child {
@@ -222,7 +210,7 @@
   .dropdown-item:hover {
     background: rgba(255, 255, 255, 0.1) !important;
     color: var(--nav-hover-color) !important;
-    transform: translateX(10px); /* Disable hover animation on mobile */
+    transform: translateX(10px);
   }
 
   .highlighted-menu {
@@ -238,9 +226,9 @@
   }
 
   .navbar-toggler {
-    border: none; /* Remove default border */
-    background: transparent; /* Make background transparent */
-    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    border: none;
+    background: transparent;
+    padding: 0.5rem 1rem;
   }
 
   .navbar-toggler-icon {
@@ -255,12 +243,10 @@
   }
 
   .navbar-toggler:focus {
-    box-shadow: none; /* Remove focus outline if unwanted */
+    box-shadow: none;
   }
 }
 
-/* ---------------- ANIMATIONS ---------------- */
-/* Dropdown Fade-In Animation - not used in mobile anymore, using height animation for mobile dropdown */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
