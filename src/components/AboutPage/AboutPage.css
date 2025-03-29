@@ -1,0 +1,36 @@
+/* src/components/AboutPage/AboutPage.css */
+
+.about-page {
+    font-family: 'Poppins', sans-serif; /* Using Poppins for general text as in other components */
+    background-color: var(--header-bg); /* Example: Use header background color for AboutPage background, or set to 'transparent' if you don't want a background */
+    padding-top: 0; /* Resetting top padding if it's inheriting from somewhere and causing issues */
+    padding-bottom: 40px; /* Example bottom padding to separate from footer */
+    overflow-x: hidden; /* Prevent horizontal scrollbar if needed */
+  }
+  
+  .about-page .container {
+    width: 100%;
+    max-width: 1200px; /* Example max width - adjust as needed for your design */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;  /* Keep consistent with your grid system if you have one */
+    padding-right: 15px; /* Keep consistent with your grid system if you have one */
+  }
+  
+ 
+  @media (max-width: 992px) {
+    .about-page {
+        padding-bottom: 30px; /* Slightly less bottom padding on smaller screens */
+    }
+  
+    .about-page > section {
+        padding-top: 60px;  /* Slightly reduced section padding on smaller screens */
+        padding-bottom: 60px;
+    }
+  
+    .about-page .container {
+      padding-left: 10px;  /* Slightly reduced container padding on smaller screens */
+      padding-right: 10px;
+    }
+  }
+  
