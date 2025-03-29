@@ -76,9 +76,7 @@ const AboutUs = () => {
             <div className="about-image">
               <img src="/images/about-us-image.jpg" alt="About Us" />
               <div className="opening-hours">
-                <div className="icon-box">
-                  <i className="fa-regular fa-clock"></i>
-                </div>
+                
                 <div className="opening-hours-content">
                   <h3>Open Hours</h3>
                   <ul>
