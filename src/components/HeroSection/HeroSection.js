@@ -9,11 +9,11 @@ import './HeroSection.css';
 const HeroSection = () => {
   const heroSlides = [
     {
-      image: '/images/hero-bg-1.jpg', 
-      subtitle: 'Crafted with love, served with passion',
-      title: 'Step into the aroma of freshly brewed coffee',
-      description: 'Discover a place where every cup is a masterpiece, crafted with passion and precision.',
-    },
+      image: '/images/hero-bg-1.jpg',
+      subtitle: 'Brewed to Perfection, Savored with Joy',
+      title: 'Experience the Essence of Coffee Bliss',
+      description: 'Indulge in a haven where each sip tells a story, blending art, flavor, and tradition.',
+    },    
     {
       image: '/images/hero-bg-2.jpg', 
       subtitle: 'Experience the finest coffee',

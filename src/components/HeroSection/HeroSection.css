@@ -67,7 +67,7 @@
     display: flex;
     justify-content: center;
     gap: 20px;
-    /* animation: fadeInUp 3s ease-in-out; */
+ 
   }
 
   .hero-buttons .btn-primary {
