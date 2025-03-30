@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -11,8 +10,10 @@ import StatsSection from './components/StatsSection/StatsSection';
 import Pricing from './components/Pricing/Pricing';
 import Footer from './components/Footer/Footer';
 
-import AboutPage from './components/AboutPage/AboutPage'; // Import AboutPage component
-
+import AboutPage from './components/AboutPage/AboutPage';
+import ServicesPage from './components/ServicesPage/ServicesPage'; 
+import Contact from './components/Contact/Contact'
+import Team from './components/Team/Team'; 
 import './App.css';
 
 function App() {
@@ -33,6 +34,9 @@ function App() {
             </>
           } />
           <Route path="/about" element={<AboutPage />} /> 
+          <Route path="/services" element={<ServicesPage />} /> 
+          <Route path="/contact" element={<Contact />}/>
+          <Route path="/team" element={<Team />} />
         </Routes>
         <Footer />
       </div>

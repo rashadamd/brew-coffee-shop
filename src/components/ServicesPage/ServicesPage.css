@@ -1,0 +1,32 @@
+.services-page {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--header-bg);
+  padding-top: 0;
+  padding-bottom: 40px;
+  overflow-x: hidden;
+}
+
+.services-page .container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 992px) {
+  .services-page {
+      padding-bottom: 30px;
+  }
+
+  .services-page > section {
+      padding-top: 60px;
+      padding-bottom: 60px;
+  }
+
+  .services-page .container {
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+}

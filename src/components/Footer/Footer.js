@@ -44,7 +44,7 @@ const Footer = () => {
               <FontAwesomeIcon icon={faPhone} />
               <h4>Contact Us</h4>
               <p>+94 78 000 0000</p>
-              <a href="mailto:brew@coffee.com">M. brew@coffee.com</a>
+              <a href="mailto:brew@coffee.com">brew@coffee.com</a>
               <a href="/contact" className="btn-contact-info">Contact Us</a>
             </div>
 
@@ -62,7 +62,7 @@ const Footer = () => {
               <p>Week Days: From 9:30 - 19:30</p>
               <p>Saturday : From 10:30 - 17:00</p>
               <p>Sunday   : 24 Hours Open</p>
-              <a href="/reserve" className="btn-contact-info">Reserve A Table</a>
+              <a href="#" className="btn-contact-info">Reserve A Table</a>
             </div>
           </section>
 
