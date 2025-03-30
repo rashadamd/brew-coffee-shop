@@ -136,7 +136,8 @@
   .pricing-menu {
     grid-template-columns: 1fr;
   }
-}/* src/components/Pricing/Pricing.css */
+}
+
 .pricing {
   padding: 80px 0;
   background: linear-gradient(to bottom, #1E3A51, #182F42, #132735);

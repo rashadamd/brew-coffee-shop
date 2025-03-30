@@ -55,7 +55,7 @@ const Header = () => {
                 <li className="nav-item"><a className="nav-link" href="/">Home</a></li>
                 <li className="nav-item"><a className="nav-link" href="/about">About Us</a></li>
                 <li className="nav-item"><a className="nav-link" href="/services">Services</a></li>
-                <li className="nav-item"><a className="nav-link" href="/menu">Menu</a></li>
+                {/* <li className="nav-item"><a className="nav-link" href="/menu">Menu</a></li> */}
 
                 {/* Pages Dropdown */}
                 <li
@@ -69,9 +69,9 @@ const Header = () => {
                     Pages
                   </a>
                   <ul className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}>
-                    <li><a className="dropdown-item" href="/service-single">Service Details</a></li>
+                    {/* <li><a className="dropdown-item" href="/service-single">Service Details</a></li>
                     <li><a className="dropdown-item" href="/blog">Blog</a></li>
-                    <li><a className="dropdown-item" href="/projects">Projects</a></li>
+                    <li><a className="dropdown-item" href="/projects">Projects</a></li> */}
                     <li><a className="dropdown-item" href="/team">Team</a></li>
                     {/* <li><a className="dropdown-item" href="/blog-single">Blog Details</a></li> */}
                     {/* <li><a className="dropdown-item" href="/project-single">Project Details</a></li> */}

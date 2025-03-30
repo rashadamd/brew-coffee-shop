@@ -7,33 +7,33 @@ const WhyChooseUs = () => {
     {
       icon: '/images/icon-why-choose-1.svg',
       title: 'Fully Responsive',
-      description: 'Designed to reduce allergens, dust, and pollutants, these systems create a healthier environment.',
+      description: 'Effortlessly adaptable across all devices, ensuring seamless experiences anytime, anywhere.',
     },
     {
       icon: '/images/icon-why-choose-2.svg',
       title: 'Fresh Ingredients',
-      description: 'We use only the freshest ingredients to ensure the best taste and quality in every dish.',
+      description: 'Crafted with farm-fresh ingredients for flavors that truly stand out in every bite.',
     },
     {
       icon: '/images/icon-why-choose-3.svg',
       title: 'Exclusive Chefs',
-      description: 'Our chefs are experts in their craft, bringing you unique and delicious creations.',
+      description: 'Discover signature dishes crafted by culinary experts, blending skill and passion.',
     },
     {
       icon: '/images/icon-why-choose-4.svg',
       title: 'Fast Services',
-      description: 'We prioritize efficiency to ensure you get your order quickly without compromising quality.',
+      description: 'Prompt and reliable service that brings convenience without compromising excellence.',
     },
     {
       icon: '/images/icon-why-choose-5.svg',
       title: 'Friendly Atmosphere',
-      description: 'Our café offers a warm and welcoming environment for all our guests.',
+      description: 'Relax in a cozy, inviting space designed to make every visit truly enjoyable.',
     },
     {
       icon: '/images/icon-why-choose-6.svg',
       title: 'Free WIFI',
-      description: 'Stay connected with our complimentary high-speed WIFI.',
-    },
+      description: 'Stay online effortlessly with our fast and secure complimentary WIFI access.',
+    }    
   ];
 
   const [contentRef, contentInView] = useInView({
@@ -56,7 +56,7 @@ const WhyChooseUs = () => {
               ref={contentRef}
             >
               <h3 className="section-subtitle">Why Choose Us</h3>
-              <h2 className="section-title">Where flavor meets comfort and services</h2>
+              <h2 className="section-title">Where taste, warmth, and exceptional care unite</h2>
               <a href="/contact" className="btn btn-primary">Contact Us</a>
             </div>
           </div>

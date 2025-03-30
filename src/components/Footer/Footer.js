@@ -43,24 +43,25 @@ const Footer = () => {
             <div className="contact-info-box">
               <FontAwesomeIcon icon={faPhone} />
               <h4>Contact Us</h4>
-              <p>T. +123 456 789</p>
-              <a href="mailto:info@domainname.com">M. info@domainname.com</a>
+              <p>+94 78 000 0000</p>
+              <a href="mailto:brew@coffee.com">M. brew@coffee.com</a>
               <a href="/contact" className="btn-contact-info">Contact Us</a>
             </div>
 
             <div className="contact-info-box">
               <FontAwesomeIcon icon={faMapMarkerAlt} />
               <h4>Address</h4>
-              <p>29721 Westheimer Road, Santa Ana,</p>
-              <p>Illinois 85486</p>
+              <p>No: 999, Brew Street</p>
+              <p>Coffee </p>
               <a href="#" className="btn-contact-info">Get Direction</a>
             </div>
 
             <div className="contact-info-box">
               <FontAwesomeIcon icon={faClock} />
               <h4>Opening Hours</h4>
-              <p>Everyday: From 12.30 To 23.00</p>
-              <p>Kitchen Closes At 22.00</p>
+              <p>Week Days: From 9:30 - 19:30</p>
+              <p>Saturday : From 10:30 - 17:00</p>
+              <p>Sunday   : 24 Hours Open</p>
               <a href="/reserve" className="btn-contact-info">Reserve A Table</a>
             </div>
           </section>
@@ -94,9 +95,9 @@ const Footer = () => {
             <div className="footer-column">
               <h3>Hours</h3>
               <ul>
-                <li>Monday - Friday: 7am - 9pm</li>
-                <li>Saturday: 8am - 10pm</li>
-                <li>Sunday: 8am - 8pm</li>
+                <li>Monday - Friday: 9:30 am - 7:30pm</li>
+                <li>Saturday: 10:30 am - 17:00 pm</li>
+                <li>Sunday: 24 Hours</li>
               </ul>
             </div>
           </div>

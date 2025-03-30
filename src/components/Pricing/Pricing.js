@@ -14,54 +14,54 @@ const Pricing = () => {
     all: [
       {
         image: '/images/pricing-menu-1.jpeg',
-        title: 'Chips & Dip',
-        price: '$16.00',
-        description: 'A perfect pairing of crispy, freshly made chips and rich, flavorful dips.',
+        title: 'Golden Crisp & Savory Dips',
+        price: '$14.50',
+        description: 'Golden chips paired with velvety dips, crafted to satisfy every craving.',
       },
       {
         image: '/images/pricing-menu-2.jpeg',
-        title: 'Tender Octopus',
-        price: '$18.00',
-        description: 'Grilled to perfection, served with a tangy citrus glaze.',
+        title: 'Herb-Grilled Octopus',
+        price: '$20.00',
+        description: 'Succulent octopus, grilled to perfection with a zesty lemon-herb glaze.',
       },
       {
         image: '/images/pricing-menu-3.jpeg',
-        title: 'Grilled Veal Filet',
-        price: '$22.00',
-        description: 'Juicy and tender, served with a side of roasted vegetables.',
+        title: 'Flame-Kissed Veal Steak',
+        price: '$24.00',
+        description: 'Flame-grilled veal with bold seasoning, complemented by a medley of seasonal vegetables.',
       },
       {
         image: '/images/pricing-menu-4.jpeg',
-        title: 'Mexican Soup',
-        price: '$12.00',
-        description: 'A spicy and hearty soup with a blend of traditional Mexican flavors.',
+        title: 'Rich Mexican Comfort Soup',
+        price: '$13.50',
+        description: 'A robust blend of spicy flavors, rich textures, and authentic Mexican warmth.',
       },
     ],
     seafood: [
       {
         image: '/images/pricing-menu-2.jpeg',
-        title: 'Tender Octopus',
-        price: '$18.00',
-        description: 'Grilled to perfection, served with a tangy citrus glaze.',
+        title: 'Herb-Grilled Octopus',
+        price: '$20.00',
+        description: 'Succulent octopus, grilled to perfection with a zesty lemon-herb glaze.',
       },
     ],
     desserts: [
       {
         image: '/images/pricing-menu-1.jpeg',
-        title: 'Chocolate Lava Cake',
-        price: '$10.00',
-        description: 'Warm, gooey chocolate cake with a molten center.',
+        title: 'Chocolate Bliss Lava Cake',
+        price: '$12.00',
+        description: 'An indulgent chocolate cake, filled with molten decadence and served warm.',
       },
     ],
     drinks: [
       {
         image: '/images/pricing-menu-4.jpeg',
-        title: 'Classic Mojito',
-        price: '$8.00',
-        description: 'A refreshing mix of mint, lime, and rum.',
+        title: 'Mint-Infused Mojito',
+        price: '$9.50',
+        description: 'Cool lime, crisp mint, and smooth rum mingle for the ultimate refreshment.',
       },
     ],
-  };
+};
 
   return (
     <section

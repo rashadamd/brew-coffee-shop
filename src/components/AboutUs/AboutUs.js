@@ -40,7 +40,7 @@ const AboutUs = () => {
           <div className="col-lg-6">
             <div className="about-content">
               <h3 className="section-subtitle">About Us</h3>
-              <h2 className="section-title">Bringing people together, one cup at a time</h2>
+              <h2 className="section-title">Uniting hearts and flavors, one sip at a time</h2>
               <div className="about-features">
                 <div className="feature-item">
                   <div className="feature-icon">
@@ -48,8 +48,8 @@ const AboutUs = () => {
                   </div>
                   <div className="feature-content">
                     <h4>Food Delivery</h4>
-                    <p>With our fast and reliable food delivery service, your favorite coffee, snacks, and treats are just a click away.</p>
-                  </div>
+                    <p>Enjoy swift and dependable delivery, bringing your favorite coffee, delightful snacks, and indulgent treats straight to your doorstep.</p>
+                    </div>
                 </div>
                 <div className="feature-item">
                   <div className="feature-icon">
@@ -57,7 +57,7 @@ const AboutUs = () => {
                   </div>
                   <div className="feature-content">
                     <h4>Event Hosting</h4>
-                    <p>Host your special moments with us! From intimate gatherings to vibrant celebrations, we offer the perfect setting.</p>
+                    <p>Celebrate life’s cherished moments in style, from cozy get-togethers to lively events, all in an unforgettable setting.</p>
                   </div>
                 </div>
               </div>
