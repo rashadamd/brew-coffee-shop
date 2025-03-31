@@ -1,0 +1,42 @@
+/* src/components/Preloader/Preloader.css */
+
+.preloader {
+    position: fixed; /* Fixed position to cover entire viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--header-bg); /* Match your header background for seamless transition */
+    z-index: 9999; /* Ensure it's on top of everything */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loading-container {
+    text-align: center;
+  }
+  
+  .loading {
+    border: 10px solid #f3f3f3; /* Light grey border */
+    border-top: 10px solid var(--logo-beige); /* Beige loading bar */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1.5s linear infinite; /* Spin animation */
+    margin: 0 auto;
+  }
+  
+  #loading-icon {
+    margin-top: 15px;
+  }
+  
+  #loading-icon img {
+    height: 35px; /* Size of your loader icon - adjust as needed */
+  }
+  
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
